@@ -1,3 +1,4 @@
+/* <style> /* rem: editor sintax coloring kludge */
 html, document, head {
 	overflow:hidden; /* Fix IE7 scroll bug */
 }
@@ -8,19 +9,20 @@ body {
 	width:100%;
 	height:100%;
 	
-	font-family:Verdana, Geneva;
-	color:black;
-	font-size: 13px;
+	font-family: "Calibri",Century Gothic,Helvetica,Verdana, Geneva;
+	color:#2F4F4F;
+	font-size: 16x;
 	line-height: 18px;
 
 	background-color:#001c3d;
 	overflow:hidden;
-}
-
+} 
+ 
 #wrapperMaster{
 }
 
-#wrapperGradient{
+/*-- div que faz o gradiente do fundo externo --*/
+#wrapperGradient{ 
 	position: absolute;
 	z-index:110;
 	top:0;
@@ -34,6 +36,7 @@ body {
 	background-repeat:repeat-x;
 }
 
+/*-- imagem de fundo - left --*/
 #wrapperImgLeft{
 	position: absolute;
 	z-index:120;
@@ -48,6 +51,7 @@ body {
 	background-repeat:no-repeat;
 }
 
+/*-- imagem de fundo - right --*/
 #wrapperImgRight{
 	position: absolute;
 	z-index:130;
@@ -76,6 +80,7 @@ body {
 	border-radius:0 0 15px 15px;
 }
 
+/*-- gradiente do content principal --*/
 #wrapperContentsGrad{
 	/* use this layer when you want a fixed gradient */
 	position: absolute;
@@ -85,15 +90,16 @@ body {
 	width:918px;
 	height:293px;
 	margin-left:-462px;
+
 	/*
 	background-image:url(wrappers/contents-gradient-tile.png);
 	background-position: 0 0; 
 	background-attachment:scroll;
 	background-repeat:repeat-x;
 	*/
-	/* background-color:yellow; */
 }
 
+/*-- imagem faixa left --*/
 #wrapperContentsTag{
 	/* use this layer when you want a fixed gradient */
 	position: absolute;
@@ -109,8 +115,6 @@ body {
 	background-position: 0 0; 
 	background-attachment:scroll;
 	background-repeat:no-repeat;
-	
-	/* background-color:yellow; */
 }
 
 /*
@@ -121,9 +125,10 @@ body {
 	width:100%;
 	height:100%;
 	overflow:auto;
-}
-*/
+}*/
 
+
+/*-- div header --*/
 #wrapperHeaderMain{
 	position: absolute;
 	z-index:210;
@@ -131,23 +136,23 @@ body {
 	left:50%;
 	width:944px;
 	height:82px;
-	margin-left:-472px;
+	margin-left:-455px;
+	margin-top: 18px;
 	overflow:hidden;
-	/* background-color:red; */
 }
 
-#wrapperHeader{
+
+/*#wrapperHeader{
 	position: absolute;
 	top:26px;
 	left:13px;
 	width:915px;
 	height:56px;
-	/* background-color:yellow; */
-}
-
+	border: thin solid red;
+}*/
 
 /*--------- INICIO DO MENU LATERAL -----------*/
-#wrapperLeftMenuMain{
+/*#wrapperLeftMenuMain{
 	position: fixed;
 	z-index:510;
 	top:137px;
@@ -156,8 +161,6 @@ body {
 	height:auto;
 	padding:0;
 	margin:0;
-
-	/* background-color:red; */
 }
 
 #wrapperLeftMenuTopN{
@@ -166,12 +169,12 @@ body {
 	right:72px;
 	width:100%;
 	height:20px;
-	
+		
 	background-image:url(wrappers/menu-left-N.png);
 	background-position: top left; 
 	background-attachment:scroll;
 	background-repeat:repeat-x;
-	/* background-color:#00CC00; */
+
 }
 
 #wrapperLeftMenuTopNE{
@@ -180,7 +183,7 @@ body {
 	right:41px;
 	width:31px;
 	height:20px;
-	
+
 	background-image:url(wrappers/menu-left-NE.png);
 	background-position: 0 0; 
 	background-attachment:scroll;
@@ -193,7 +196,7 @@ body {
 	right:0px;
 	width:41px;
 	height:100%;
-	overflow:hidden; /* oh my gosh, that was tricky, along with wrapperLeftMenuRight2 */
+	overflow:hidden; 
 
 }
 
@@ -208,16 +211,22 @@ body {
 	background-position: 0 0; 
 	background-attachment:scroll;
 	background-repeat:repeat-y;
-
 }
 
 #wrapperLeftMenuRight3{
+	padding-top: 3px;
 	position: absolute;
 	top:0px;
 	right:0px;
 	width:41px;
 	height:100%;
 }
+
+#imgLeftMenuButton{
+	width: 41px;
+	height: 137px;
+}
+
 
 #wrapperLeftMenuBottomS{
 	position: absolute;
@@ -243,7 +252,6 @@ body {
 	background-position: bottom left; 
 	background-attachment:scroll;
 	background-repeat:no-repeat;
-
 }
 
 #wrapperLeftMenuContents{
@@ -251,20 +259,52 @@ body {
 	background-color:white;
 	max-height:400px;
 	overflow:auto;
-}
+}*/
+
 /*--------- FIM DO MENU LATERAL -----------*/
+
 
 #wrapperTopMenuMain{
 	position: absolute;
 	z-index:310;
-	top:82px;
-	right:50%;
+	top: 82px;
+	left:50%;
 	width:auto;
 	height:46px;
-	margin-right:-460px;
-	overflow:hidden;
+	margin-left: -460px;
+	overflow:hidden;	
 }
 
+#wrapperTopMenuLeft{
+	/*position: absolute;
+	top:0;
+	left:0;
+	width:27px;
+	height:46px;
+	
+	background-image:url(wrappers/menu-top-left.png);
+	background-position: top left; 
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+	/* background-color:orange; */
+}
+
+/*menu superior - imagem borda direita*/
+#wrapperTopMenuRight{
+	/*position: absolute;
+	top:0;
+	right:0;
+	width:30px;
+	height:46px;
+	
+	background-image:url(wrappers/menu-top-right.png);
+	background-position: bottom right; 
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+	/* background-color:red; */
+}
+
+/*menu superior - topo do content*/
 #wrapperTopMenuSub{
 	width:auto;
 	height:46px;
@@ -282,8 +322,14 @@ body {
 	background: -ms-linear-gradient(top, #f6fcff 3%,#e8ffff 3%,#fdffff 22%,#e6f8fd 62%,#d9f1f9 84%,#d9f1ff 98%,#e7f6ff 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #f6fcff 3%,#e8ffff 3%,#fdffff 22%,#e6f8fd 62%,#d9f1f9 84%,#d9f1ff 98%,#e7f6ff 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6fcff', endColorstr='#e7f6ff',GradientType=0 ); /* IE6-9 */
+
+	/*background-image:url(wrappers/menu-top-tile.png); 
+	background-position: top left; 
+	background-attachment:scroll;
+	background-repeat:no-repeat-x;*/
 }
 
+/*menu superior - content interno*/
 #wrapperTopMenuContents{
 	height:50px;
 	margin:0px 50px 50px 50px;
@@ -291,30 +337,34 @@ body {
 	padding:6px 15px 0px 0px;
 }
 
+/*paginação*/
 #topMenuPages{
 	display:inline;
 	padding:0;
 	margin:0;
 } 
 
+/*paginação*/
 #topMenuPages div{
 	display:inline;
 	padding:0;
 	margin:0;
 } 
 
+/*paginação*/
 #topMenuPages div ul{
 	display:inline;
 	padding:0;
 	margin:0;
+
 } 
 
+/*paginação*/
 #topMenuPages div li{
 	display:inline;
 	padding:0;
 	margin:0;
 } 
-
 
 #topMenuPages a, 
 #topMenuPages a:link, 
@@ -364,7 +414,7 @@ body {
 #topMenuPages a.selected:active, #topMenuPages a:hover {
 }
 
-#wrapperContentsTop{
+#wrapperContentsTop{ /*div com a imagem da borda superior- content principal*/
 	position:absolute;
 	z-index:410;
 	top:118px;
@@ -392,21 +442,23 @@ body {
 	overflow:hidden;
 }
 
-#wrapperContentsMain{
+/* -- div de conteudo interno do content --*/
+#wrapperContentsMain{ 
 	height:100%;
-	overflow:auto;
+	overflow:hidden;
 	margin:0 16px 0 10px;
 	padding: 0 0 0 0;
 }
 
+/*content principal*/
 #wrapperContentsSub{
 	margin:0 0 30px 0;
-	padding: 0 150px 70px 150px;
+	padding: 0 125px 70px 125px;
 	background-image:url(wrappers/contents-gradient-tile.png);
 	background-position: 70px 157px; 
 	background-attachment:fixed;
 	background-repeat:repeat-x;
-	min-height:264px;
+	min-height:264px;	
 }
 
 header { /* IE compatibility */
@@ -414,11 +466,12 @@ header { /* IE compatibility */
 }
 
 header h1 {
-	font-family:Arial, Helvetica;
-	font-size:20px;
+	font-family: "Calibri",Century Gothic,Helvetica,Verdana, Geneva;
+	font-size:25px;
 	line-height:28px;
 	padding:0;
 	margin:0;
+	text-shadow: #5B94BB 2px 2px 6px;
 }
 
 #labelTitle1{
@@ -427,6 +480,7 @@ header h1 {
 
 #labelTitle2{
 	color:#334996;
+	font-size: 23px;
 }
 
 header h1 a {
@@ -442,7 +496,6 @@ header h1 img{
 }
 
 
-/* ========================================================================== */
 img{
 	border:none 0px transparent;
 }
@@ -455,22 +508,33 @@ a:hover {
 }
 
 a, a:link {
-	color:#334996;
+	color: #00688B;
 	text-decoration: underline;
+	line-height: 19px;
+	text-align: justify;
+	word-spacing: 1px;	
+	font-weight: bold;
 }
 
 a:visited {
-	color:#001c3d;
+	color: #3166ff;
 	text-decoration: underline;
+	line-height: 19px;
+	text-align: justify;
+	word-spacing: 1px;	
+	font-weight: bold;
 }
 
 a:active, a:hover {
-	color:#8dd4ff;
-	text-decoration: underline;
+	color: #3166ff;
+	/*text-decoration: underline;*/
+	line-height: 19px;
+	text-align: justify;
+	word-spacing: 1px;	
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family:Arial, Helvetica;
+	font-family: Calibri,Century Gothic,Helvetica,Verdana, Geneva;
 }
 
 em, i {
@@ -505,13 +569,17 @@ blockquote:after {
   right: 10px;
 }
 
-
 table {
  width: 100%;
  margin-bottom: 20px;
- font-family: Verdana, Geneva;
- font-size:14px;
+ font-family: Calibri,Century Gothic,Helvetica,Verdana, Geneva;
+ font-size:15px;
 }
+
+table input {
+ width: 2em;
+}
+
 
 table caption {
 	font-weight:bold;
@@ -577,8 +645,6 @@ s, strike, del {
   text-decoration: line-through; 
 }
 
-/* ========================================================================== */
-
 .size-full {
  max-width: 550px;
  height: auto;
@@ -594,36 +660,52 @@ section {
 }
 
 article {
-	/* border-bottom: 1px dashed #ccc; */
 	display: block;
 	padding:0;
 	margin:0 0;
 }
 
+
 article p {
 	margin:0 0 14px 0;
 }
 
+/* estilo das fontes dos conteudos maiores*/
 article p, footer p, article ul, article ol {
-	font-size: 13px;
-	line-height: 18px;
+	font-size: 16px;
+	line-height: 20px;
 	text-align:justify;
-	/* letter-spacing:1.5px; */
-	word-spacing:2px;
 }
 
-article p a, article p a:link, article p a:visited, article p a:active, a:hover {
+
+article ul a, article ul a:link, article ul a:visited, article ul a:active, a:hover{
+	color: #00688B;
+	text-decoration: underline;
+	line-height: 19px;
+	text-align: justify;
+	word-spacing: 1px;	
+	font-weight: bold;
+}
+
+article p a, article p a:link, article p a:visited, article p a:active, a:hover{
+	color: #00688B;
+	text-decoration: underline;
+	line-height: 19px;
+	text-align: justify;
+	word-spacing: 1px;	
+	font-weight: bold;
+}
+
+/*article p a, article p a:link, article p a:visited, article p a:active, a:hover {
+	
 }
 article p a, article p a:link, article p a:visited {
 }
 article p a:active, article p a:hover {
-}
+}*/
 
 article a img {
-	/* background-color:#001c3d; */
-	/* border:solid 1px #001c3d; */s
 	margin:0;
-	/* padding:5px; */
 	padding:0;
 }
 
@@ -631,7 +713,7 @@ article time {
 	display: block;
 	padding: 0;
 	margin: -20px 0 0 0;
-	color: #8dd4ff;
+	color: #708090;
 	text-align:right;
 }
 
@@ -654,10 +736,7 @@ footer {
 	padding:0 0 5px 0;
 	margin:0;
 	clear: both;
-	
 	text-align: center;
-	
-  /* border-top: 1px solid #334996; */
 }
 
 footer p {
@@ -676,7 +755,6 @@ footer small{
 }
 
 article h1, article h2, article h3, article h4, article h5, article h6 {
-	color:black;
 	font-weight: normal;
 	padding: 0;
 	margin: 0;
@@ -695,61 +773,67 @@ article h1 a:hover, article h2 a:hover, article h3 a:hover, article h4 a:hover, 
 
 article h1 a:active, article h2 a:active, article h3 a:active, article h4 a:active, article h5 a:active,
 article h1 a:hover, article h2 a:hover, article h3 a:hover, article h4 a:hover, article h5 a:hover {
-	border-bottom:dotted 2px ;
 }
 
 article h6 a:active, article h6 a:hover {
-	border-bottom:dotted 1px ;
 }
 
+/*-- titulos das paginas --*/
 article h1 {
-	font-size: 18px;
-	line-height:21px;
+	font-size: 21px;
+	line-height:25px;
 	margin:0 0 20px 0;
-	color:#001c3d;
+	color:#515959;
+	opacity: 0.8;
+	font-weight: bold;
+	word-spacing:2px;
 }
 
+/*-- sub-titulos das paginas - chamada --*/
 article h2 {
-	font-size: 18px;
-	line-height:21px;
+	font-size: 17px;
+	line-height:19px;
 	margin:0 0 20px 0;
-	color:#334996;
+	color:#515959;
+	opacity: 0.8;
+	word-spacing:0px;
+	font-weight: bold;
+	font-style: italic;
 }
 
 article h2 a {
 	text-decoration: none;
 }
 
+/*-- pequenos trechos de chamadas --*/
 article h3 {
-	font-size: 15px;
-	line-height:21px;
-	margin:0 0 20px 0;
-	color:black;
-	font-weight: bold;
+	font-size: 17px;
+	line-height:20px;
+	margin:0 0 10px 0;
+	color: #2F4F4F;
+	font-style:italic;
 }
 
 article h4 {
 	font-size: 15px;
 	line-height:21px;
 	margin:0 0 20px 0;
-	color:#8dd4ff;
+	color: #8dd4ff;
 	font-weight: bold;
 }
 
 article h5 {
-	font-size: 15px;
+	font-size: 17px;
 	line-height:18px;
 	margin:0 0 20px 0;
 	font-weight: bold;
-	color:#8dd4ff;
+	color:#515959;
 }
 
 article h6 {
 	font-size: 15px;
-	line-height:17px;
-	margin:0 0 20px 0;
-	font-weight: bold;
-	color:#8dd4ff;
+	color: #708090;
+	text-align: justify;
 }
 
 /* custom elements */
@@ -780,90 +864,64 @@ article .box2{
 }
 
 
+/*fernanda - box*/
 table.contentBox{
 	border:0;
-	padding:0;
-	margin: 0 0 14px 0;
+	padding:10px;
+	margin: 0 5px 16px 0;
 	width:auto;
+	border: thin solid #BFEFFF;
+	box-shadow: #5B94BB 2px 3px 7px;
+	border-radius: 18px 0 18px 0;
+	background-image:url(elements/content-box-fill.png);
+	opacity: 0.8;
 }
 	table.contentBox td{
-		padding:0;
+		padding:5px;
 		margin:0;
 		background-color:transparent;
 		background-attachment:scroll;
-		font-size: 13px;
-		line-height: 18px;
+		font-size: 15px;
+		line-height: 19px;
 		text-align: justify;
-		word-spacing: 2px;	}
-	table.contentBox td._315{
-		width:24px;
-		height:23px;
-		overflow:hidden;
-		background-image:url(elements/content-box-315.png);
-		background-position:left top; 
-		background-repeat:no-repeat;
-	}
-	table.contentBox td._000{
-		height:23px;
-		overflow:hidden;
-		background-image:url(elements/content-box-000.png);
-		background-position:left top; 
-		background-repeat:repeat;
-	}
-	table.contentBox td._045{
-		width:20px;
-		height:23px;
-		overflow:hidden;
-		background-image:url(elements/content-box-045.png);
-		background-position:right top; 
-		background-repeat:no-repeat;
-	}
+		word-spacing: 1px;	
+		color: #3166ff;
+		opacity: 0.9;
+}
 
-	table.contentBox td._270{
-		width:24px;
-		overflow:hidden;
-		background-image:url(elements/content-box-270.png);
-		background-position:left top; 
-		background-repeat:repeat;
-	}
-	table.contentBox td.contents{
-		background-image:url(elements/content-box-fill.png);
-		background-position:left top; 
-		background-repeat:repeat;
-	}
-	table.contentBox td._090{
-		width:20px;
-		overflow:hidden;
-		background-image:url(elements/content-box-090.png);
-		background-position:right top; 
-		background-repeat:repeat;
-	}
-	
-	table.contentBox td._225{
-		width:24px;
-		height:20px;
-		overflow:hidden;
-		background-image:url(elements/content-box-225.png);
-		background-position:left bottom; 
-		background-repeat:no-repeat;
-	}
-	table.contentBox td._180{
-		height:20px;
-		overflow:hidden;
-		background-image:url(elements/content-box-180.png);
-		background-position:left bottom; 
-		background-repeat:repeat;
-	}
-	table.contentBox td._135{
-		width:20px;
-		height:20px;
-		overflow:hidden;
-		background-image:url(elements/content-box-135.png);
-		background-position:right bottom; 
-		background-repeat:no-repeat;
-	}
+/* conteúdos destaques dos boxs */
+.span-box{	
+	font-size: 16px;
+	color: #3166ff;
+	font-weight: bold;
+	opacity: 0.9;
+}
 
+	table.contentBox td a {
+		font-size: 15px;
+		line-height: 19px;
+		text-align: justify;
+		word-spacing: 1px;	
+		color: #00688B;
+		font-weight: bold;
+		text-decoration: underline;
+}
 
+	table.contentBox td a:hover {
+		font-size: 15px;
+		line-height: 19px;
+		text-align: justify;
+		word-spacing: 1px;	
+		color: #00008B;
+		font-weight: bold;
+		text-decoration: underline;
+}
+
+	table.contentBox td ul, ol {
+		font-size: 15px;
+		line-height: 20px;
+		text-align: justify;
+}
 
 .lightbox{
 	position:fixed;
@@ -1020,11 +1078,10 @@ nav {
 	padding:15px;
 	margin:0;
 
-	font-family:Arial, Helvetica;
+	font-family: Calibri,Century Gothic,Helvetica,Verdana, Geneva;
 	font-size:13px;
 	font-weight:bold;
-	color:#334996	
-	/* background-color:yellow; */
+	color:red;
 }
 
 nav h3 {
@@ -1033,9 +1090,7 @@ nav h3 {
 	font-weight: normal;
 	padding: 0;
 	margin: 0 0 15px 0;
-	/* text-shadow: 2px 2px 2px #ccc; */
 }
-
 
 nav ul {
 	list-style: none;
@@ -1054,8 +1109,12 @@ nav ul li a:visited,
 nav ul li a:active, 
 nav ul li a:hover {
 	font-size:17px;
-	color:#658ae5;
-	line-height:10px;
+	color: #00688B;
+	text-decoration: underline;
+	line-height: 19px;
+	text-align: justify;
+	word-spacing: 1px;	
+	font-weight: bold;
 }
 
 nav ul li a.selected, 
@@ -1065,13 +1124,14 @@ nav ul li a.selected:visited {
 }
 
 nav ul li a, nav ul li a:link, nav ul li a:visited {
-	text-decoration: none;
 }
 
 nav ul li a:active, nav ul li a:hover,
 nav ul li a.selected:active, nav ul li a.selected:hover {
-	text-decoration: none;
-	color:black;
+	color: #3166ff;
+	line-height: 19px;
+	text-align: justify;
+	word-spacing: 1px;
 }
 
 nav ul li ul li {
@@ -1194,10 +1254,6 @@ a.comment-reply-link {
  font-size: 12px;
  font-weight: bold; 
 }
-
-
-
-
 
 /* comment form */
 
@@ -1336,8 +1392,6 @@ img.aligncenter {
 
 
 /* widgets */
-
-
 .widget_rss ul a {
  display: block; 
  font-weight: bold;
@@ -1360,11 +1414,9 @@ img.aligncenter {
 }
 
 
-
 .widget_recent_comments ul li a {
   display: block;
 }
-
 
 #wp-calendar {
  font-size: 0.8em;
@@ -1388,3 +1440,195 @@ img.aligncenter {
 #wp-calendar caption {
  font-weight: bold; 
 }
+
+.image-pag{
+	width: 25px;
+	height: 25px;
+	margin-top: 3px;
+}
+
+.image-home{
+	width: 70px;
+	height :28px;
+	display: none;
+}
+
+/* </style> rem: editor sintax coloring kludge */
+
+/*tabela da atividade página 53 - fernanda*/
+.table-53pag{
+	color: white;
+	width: 700px;
+	font-size: 14px;
+}
+.table-53pag th{
+	width: 450px;
+	padding-left: 10px;
+}
+.table-53pag td{
+	width: 150px;
+	padding-left: 10px;
+}
+.table-53pag td input{
+	width: 2em;
+	margin-right: 15px;
+	font-size: 15px;
+	text-align: center;
+}
+
+/*tooltip acresentado por zyon*/
+#easyTooltip
+{
+	z-index: 1000;
+	padding: 5px 10px;
+	border: 2px solid #fff;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: rgba(0, 153, 204, 0.6);
+	color: #fff;
+}
+
+.circle{
+	width: 200px;
+	border: 2px solid #fff;
+	padding: 9px;
+	border-radius: 20px;
+	background: #bdcbf4;
+	margin: 50px 0 0 0;
+	display: inline-block;
+}
+
+.circle a {
+	color: #fff;
+	font-size: 20px;
+	text-decoration: underline;
+	line-height: 19px;
+	text-align: justify;
+	word-spacing: 1px;	
+}
+
+/*todos elementos do pop-up*/
+.pop-up{
+	width: 275px;
+	border: 4px solid #A2CD5A;
+	padding: 10px;
+	border-radius: 12px;
+	text-align: left;
+	box-shadow: #5B94BB 2px 3px 7px;
+	color: #838B8B;	
+	background: #F5FFFA;
+	display: none;
+}
+
+.triangulo{  width: 150px; height: 120px; opacity: 0.9; cursor: pointer; margin: 50px 0 0 230px;}
+.show-img-tutor{ margin: -300px 0 0 0; float: left; }
+.show-tutor{ margin: -270px 0 0 420px; }
+.show-mural { margin: 40px 0 0 0; float: left; }
+.show-mensagens{ margin: 40px 0 0 410px; }
+.show-conteudos{ margin: -280px 0 0 0; float: left; }
+.show-blog{ margin: -280px 0 0 410px; }
+.show-foruns{ margin: -360px 0 0 0; float: left; }
+.show-chats{ margin: -360px 0 0 410px; }
+.show-mod-basicos{ margin: -470px 0 0 340px; float: left; }
+.show-mod-tematicos{ margin: -275px 0 0 340px; }
+
+.tutor-link{
+	font-size: 40px;
+	border: 2px solid red;
+	border-radius: 7px;
+	cursor: move;
+}
+
+.sub-pop-up{
+	width: 285px;
+	border: 4px solid #A2CD5A;
+	padding: 10px;
+	border-radius: 12px;
+	text-align: left;
+	box-shadow: #5B94BB 2px 3px 7px;
+	color: #838B8B;	
+	background: rgb(255, 255, 232);/* #F5F5DC;*/
+	display: none;
+}
+
+.pop-up a, pop-up a:link, pop-up a:visited, pop-up a:active, a:hover {
+	color: #00688B;
+	text-decoration: underline;
+	line-height: 19px;
+	text-align: justify;
+	word-spacing: 1px;	
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.ui-widget{ position: absolute;	}
+.ui-dialog ui-widget ui-widget-content ui-corner-all ui-resizable{	position: absolute; }
+.ui-dialog-titlebar
+{
+	width: 299px;
+	display: block;
+	height: 0;
+	color: #E5E5E5;
+	text-align: left;
+	cursor: move;
+}
+
+.ui-dialog-titlebar-close
+{
+	display: block;
+	position: absolute;
+	right: -9px;
+	top: -9px;
+	height: 25px;
+	width: 25px;
+	background-image:url(icons/close25x25.png);
+	background-repeat:no-repeat;
+}
+
+.fundo{
+	opacity: .5;
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.70;
+	position: absolute;
+	top: 0;
+	left:0;
+	background:#fff;
+	z-index: 4000;
+	width: 100%;
+	height:100%;
+	display: none;
+}
+
+span.titlemoodle{	
+	color: #FF8247;
+	/*text-decoration: underline;*/
+	font-weight:bold;
+}
+
+
+/*-- links para ferramentas interna - moodle --*/
+/*a.interno-link{
+	color: #FF8247;
+	line-height: 9px;
+	text-align:center;
+	font-weight:bold;
+	text-decoration: underline;
+}
+a.interno-link:visited, a.interno-link:active, a.interno-link:hover {
+	text-decoration: underline;
+}
+
+article p a.interno-link, ul a.interno-link, ol a.interno-link{
+	color: #FF8247;
+	text-decoration: underline;
+	line-height: 19px;
+	text-align: justify;
+	word-spacing: 1px;	
+	font-weight: bold;
+}
+
+article p a.interno-link:visited, a.interno-link:active, a.interno-link:hover
+article ul a.interno-link:visited, a.interno-link:active, a.interno-link:hover
+article ol a.interno-link:visited, a.interno-link:active, a.interno-link:hover{
+}
+*/
