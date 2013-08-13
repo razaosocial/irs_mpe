@@ -1,86 +1,109 @@
-<!DOCTYPE html><!--  -->
-<!--
-================================================================================
-begin \header.php 
-================================================================================
--->
+<!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-	<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>ONGs Online</title>
-		<link rel="stylesheet" href="wp-content/themes/ONGsOnline/style.css" type="text/css" media="screen" />
- 
-		<!-- link rel="pingback" href="http://ongs.aeon/xmlrpc.php" / -->
-		 
-				<link rel="alternate" type="application/rss+xml" title="ONGs Online &raquo; Feed" href="feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="ONGs Online &raquo; Comments Feed" href="comments/feed/index.html" />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='M15-Diagnóstico da Organização-Encerramento do curso' href='home-3/m15-diagnostico-da-organizacao-veja-so-1/m15-diagnostico-da-organizacao-encerramento-do-curso/index.html' />
-<link rel='next' title='Apresentação do curso-mpe' href='home-mpe/apresentacao-do-curso/index.html' />
-<meta name="generator" content="WordPress 3.3.2" />
-<link rel='canonical' href='index.html' />
-		<script type="text/javascript">
-// HTML 5 compatibility
-document.createElement('header');
-document.createElement('footer');
-document.createElement('section');
-document.createElement('aside');
-document.createElement('nav');
-document.createElement('article');
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ONGs Online</title>
 
-function addEvent(obj, evType, fn){ 
- if (obj.addEventListener){ 
-   obj.addEventListener(evType, fn, false); 
-   return true; 
- } else if (obj.attachEvent){ 
-   var r = obj.attachEvent("on"+evType, fn); 
-   return r; 
- } else { 
-   return false; 
- } 
-}
+	<!-- js pop-ups -->
+	<script src="wp-includes/js/modernizr.js"></script> 
+	<script src="wp-includes/js/jquery-min.js"></script>
+	<script src="wp-includes/js/jquery-ui-1.8.18.custom.min.js"></script>
 
-var _id=function(id){return document.getElementById(id);}
+	<!-- js tooltip -->
+	<script src="wp-includes/js/easyTooltip.js"></script>
 
-var lightbox = {
-	closeEvents : [],
-	open : function(id){
-		document.getElementById(id).style.display = "block";
-		_id('wrapperMaster').parentNode.insertBefore(_id(id), _id('wrapperMaster'));
-		if( !lightbox.closeEvents[id] ){
-			addEvent(
-				document.getElementById(id),
-				"click",
-				function(){
-					lightbox.close(id);
-				}
-			);
-			lightbox.closeEvents[id] = true;
+
+	<link rel="stylesheet" href="wp-content/themes/ONGsOnline/style.css" type="text/css" media="screen" />
+
+	<!-- link rel="pingback" href="http://ongs.aeon/xmlrpc.php" / -->
+
+	<link rel="alternate" type="application/rss+xml" title="ONGs Online &raquo; Feed" href="feed/index.html" />
+	<link rel="alternate" type="application/rss+xml" title="ONGs Online &raquo; Comments Feed" href="comments/feed/index.html" />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+	<link rel='prev' title='M15-Diagnóstico da Organização-Encerramento do curso' href='home-3/m15-diagnostico-da-organizacao-veja-so-1/m15-diagnostico-da-organizacao-encerramento-do-curso/index.html' />
+	<link rel='next' title='Apresentação do curso-mpe' href='home-mpe/apresentacao-do-curso/index.html' />
+	<meta name="generator" content="WordPress 3.3.2" />
+	<link rel='canonical' href='index.html' />
+	<script type="text/javascript">
+		// HTML 5 compatibility
+		document.createElement('header');
+		document.createElement('footer');
+		document.createElement('section');
+		document.createElement('aside');
+		document.createElement('nav');
+		document.createElement('article');
+
+		function addEvent(obj, evType, fn){ 
+			if (obj.addEventListener){ 
+				obj.addEventListener(evType, fn, false); 
+				return true; 
+			} else if (obj.attachEvent){ 
+				var r = obj.attachEvent("on"+evType, fn); 
+				return r; 
+			} else { 
+				return false; 
+			} 
 		}
-		return undefined;
-	},
-	close : function(id){
-		//console.info("close");
-		document.getElementById(id).style.display = "none";
-		lightbox.id = null;
-		return undefined;
-	}
-};
 
+		var _id=function(id){return document.getElementById(id);}
+
+		var lightbox = {
+			closeEvents : [],
+			open : function(id){
+				document.getElementById(id).style.display = "block";
+				_id('wrapperMaster').parentNode.insertBefore(_id(id), _id('wrapperMaster'));
+				if( !lightbox.closeEvents[id] ){
+					addEvent(
+						document.getElementById(id),
+						"click",
+						function(){
+							lightbox.close(id);
+						}
+						);
+					lightbox.closeEvents[id] = true;
+				}
+				return undefined;
+			},
+			close : function(id){
+				//console.info("close");
+				document.getElementById(id).style.display = "none";
+				lightbox.id = null;
+				return undefined;
+			}
+		};
 		</script>
+
+		<script type="text/javascript"> $(document).ready(function() { $(".image-home, .image-pag").easyTooltip();});</script>
+
+		<script>
+			$(function() { 
+				$('#popup').dialog({ 
+					autoOpen: false,
+					modal: true,
+					position: [420, 250],
+					width: 600,
+					zIndex: 5000,
+					hide: "explode",
+					show: "blind",
+					closeText: "",
+					draggable: false
+				});
+
+				$('#abrir').click(function() {
+					$('.fundo').css('display','block');
+					$('#popup').dialog('open');
+				});
+				$('.ui-dialog-titlebar-close').click(function(){
+					$('.fundo').css('display','none');
+				});
+			});
+		</script>
+		
 	</head>
-	<body class="home page page-id-4280 page-parent page-template-default">
+	<body>
 
-
-
-
-		<!--
-		________________________________________________________________________________
-		begin main wrappers
-		¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-		-->
 		<div id="wrapperMaster">
 			<div id="wrapperGradient">&nbsp;</div>
 			<div id="wrapperImgLeft">&nbsp;</div>
@@ -90,31 +113,6 @@ var lightbox = {
 			<div id="wrapperContentsTag">&nbsp;</div>
 
 
-
-
-<!--
-================================================================================
-end \header.php 
-================================================================================
--->
- 
-<!--
-================================================================================
-begin \page.php 
-================================================================================
--->
-
-
-
-
-	 
-
-
-			<!--
-			________________________________________________________________________________
-			begin header wrappers
-			¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-			-->
 			<div id="wrapperHeaderMain">
 				<div id="wrapperHeader">
 					<header>
@@ -123,164 +121,70 @@ begin \page.php
 								<img id="imgLogo" src="wp-content/themes/ONGsOnline/elements/header-logo.png" width="43" height="56" alt="ONGs Online" title="">
 							</a>
 							<span id="labelTitle1">Ideias e Práticas da Gestão de Micro e Pequenas Empresas</span><br />
-														<span id="labelTitle2">Instruções de navegação</span><br />
+							<span id="labelTitle2">Instruções de navegação</span><br />
 						</h1>
 					</header>
 				</div><!-- wrapperHeader -->
 			</div><!-- wrapperHeaderMain -->
-			<!--
-			________________________________________________________________________________
-			end header wrappers
-			¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-			-->
 
-
-			<!--
-			________________________________________________________________________________
-			begin content wrappers
-			¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-			-->
 			<div id="wrapperContentsTop"></div>
 			<div id="wrapperContentsMaster">
 				<div id="wrapperContentsMain">
 					<div id="wrapperContentsSub">
 
-			<section>
+						<section>
 
-	
-			<article class="post-4280 page type-page status-publish hentry" id="post-4280">
-				<h1 style="text-align: center;"><span style="color: #333333;">Bem vindo ao curso:</span></h1>
-<h1 style="text-align: center;">Ideias e Práticas da Gestão de Micro e Pequenas Empresas</h1>
-<p style="text-align: center;">Para entender melhor como navegar no curso, clique no botão abaixo e vejas as instruções de navegação:</p>
-<p><a href="javascript:void(_id('popup02').style.display='block');"><img class="aligncenter size-full wp-image-3578" title="" src="wp-content/uploads/2012/06/bot_instrucao1.png" alt="" width="342" height="80" /></a></p>
-<div id="popup02" class="flyout" style="top: 0px; left: 50%; width: 700px; margin-left: -350px;">
-<table class="flyout" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td class="_315"></td>
-<td class="_000"></td>
-<td class="_045"><a href="javascript:void(_id('popup02').style.display='none');"><img class="flyout" src="wp-content/themes/ONGsOnline/elements/content-flyout-close.png" alt="fechar" width="46" height="46" /></a></td>
-</tr>
-<tr>
-<td class="_270"></td>
-<td class="contents"><img class="size-full wp-image-5977 aligncenter" title="" src="wp-content/uploads/2013/02/instrucao-de-navegacaob_mpe2.gif" alt="" width="630" height="472" /></td>
-<td class="_090"></td>
-</tr>
-<tr>
-<td class="_225"></td>
-<td class="_180"></td>
-<td class="_135"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="flyout" style="top: 0px; left: 50%; width: 700px; margin-left: -350px;"></div>
-<div class="flyout" style="top: 0px; left: 50%; width: 700px; margin-left: -350px;"><img class="aligncenter size-full wp-image-4282" title="" src="wp-content/uploads/2013/02/instrucao-de-navegacaob_mpe1.gif" alt="" width="630" height="472" /></div>
- 
-				<!--
-				<hr class="clearfix" />
-				 
-				 
-				<hr class="clearfix" />
-				-->
-			</article>
-			<!--
-================================================================================
-begin \comments.php 
-================================================================================
--->
- 
-<!-- You can start editing here. -->
-	 
-	   
-	 
- 
-<!--
-================================================================================
-end \comments.php 
-================================================================================
--->
- 
-			</section>
+
+							<article class="post-4280 page type-page status-publish hentry" id="post-4280">
+								<h1 style="text-align: center;">Bem vindo ao curso:</h1>
+								<h1 style="text-align: center;">Ideias e Práticas da Gestão de Micro e Pequenas Empresas</h1>
+								<p style="text-align: center;">Para entender melhor como navegar no curso, clique no botão abaixo e vejas as instruções de navegação:</p>
+								
+								<div class="inst_nav">
+									<a id="abrir">Instruções de Navegação</a>
+								</div>
+
+							<div id="popup" class="pop-up">
+								<p><img class="size-full wp-image-5977 aligncenter" title="" src="wp-content/uploads/2013/02/instrucao-de-navegacaob_mpe2.gif" alt="" width="630" height="472" />
+								</p>
+							</div>
+						</article>
+
+					</section>
 
 
 
-					</div><!-- wrapperContentsSub -->
-				</div><!-- wrapperContentsMain -->
-			</div><!-- wrapperContentsMaster -->
-			<!--
-			________________________________________________________________________________
-			end content wrappers
-			¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-			-->
+				</div><!-- wrapperContentsSub -->
+			</div><!-- wrapperContentsMain -->
+		</div><!-- wrapperContentsMaster -->
 
-
-
-
-
-
-
-
-
-
-
-
-	 
-
-
-
-<!--
-================================================================================
-end \page.php 
-================================================================================
--->
-<!--
-================================================================================
-begin \footer.php 
-================================================================================
--->
-
-
-
-
-			<!--
-================================================================================
-begin \sidebar.php 
-================================================================================
--->
-
-
-
-	<!--
-	________________________________________________________________________________
-	begin left menu wrappers
-	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-	-->
-	<div id="wrapperLeftMenuMain">
-		<div id="wrapperLeftMenuTopN"></div>
-		<div id="wrapperLeftMenuTopNE"></div>
-		<div id="wrapperLeftMenuContents">
-			<nav id="wrapperLeftMenuNav">
-<div class="menu-em-container"><ul id="menu-em" class="menu"><li id="menu-item-4299" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4280 current_page_item menu-item-4299"><a href="index.html">Home</a></li>
-<li id="menu-item-4377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4377"><a href="home-mpe/apresentacao-do-curso/index.html">Apresentação do curso</a></li>
-<li id="menu-item-4376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4376"><a href="home-mpe/primeiro-contato-mpe/index.html">Primeiro contato</a></li>
-<li id="menu-item-4374" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4374"><a href="home-mpe/na-pratica-1-mpe/index.html">Na Prática</a></li>
-<li id="menu-item-4379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4379"><a href="home-mpe/vamos-entender-melhor-1-mpe/index.html">Vamos entender melhor</a></li>
-<li id="menu-item-4425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4425"><a href="home-mpe/m1-socializacao-e-ambientacao-veja-so-1-mpe/index.html">1. Socialização</a></li>
-<li id="menu-item-5670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5670"><a href="home-mpe/m2-somando-esforcos-vamos-entender-melhor-1-mpe/index.html">2. Redes e Colaboração</a></li>
-<li id="menu-item-4510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4510"><a href="home-mpe/m3-contexto-brasileiro-mpe-mpe/index.html">3. Contexto Brasileiro MPE</a></li>
-<li id="menu-item-4574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4574"><a href="home-mpe/m4-empreendedorismo-veja-so1-mpe/index.html">4. Empreendedorismo</a></li>
-<li id="menu-item-4621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4621"><a href="home-mpe/m5-planejamento-estrategico-mpe/index.html">5. Planejamento Estratégico</a></li>
-<li id="menu-item-4984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4984"><a href="home-mpe/m6-etica-e-sustentabilidade-veja-so-1/index.html">6. Ética e Sustentabilidade</a></li>
-<li id="menu-item-5057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5057"><a href="home-mpe/m7-gestao-da-cadeia-de-valor-mpe/index.html">7. Gestão da Cadeia de Valor</a></li>
-<li id="menu-item-5198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5198"><a href="home-mpe/m8-gestao-da-qualidade-veja-so-1-mpe/index.html">8. Gestão da Qualidade</a></li>
-<li id="menu-item-5187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5187"><a href="home-mpe/m9-contabilidade-e-financas-veja-so-1-mpe/index.html">9. Contabilidade e Finanças</a></li>
-<li id="menu-item-5260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5260"><a href="home-mpe/m10-gestao-de-recursos-humanos-veja-so-1-mpe/index.html">10. Recursos Humanos</a></li>
-<li id="menu-item-5305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5305"><a href="home-mpe/m11-comunicacao-e-marketing-na-pratica1-mpe/index.html">11. Marketing e Vendas</a></li>
-<li id="menu-item-5347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5347"><a href="home-mpe/m12-legislacao-veja-so-1-mpe/index.html">12. Legislação</a></li>
-<li id="menu-item-5390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5390"><a href="home-mpe/m13-tecnologia-a-servico-do-negocio-veja-so-1-mpe/index.html">13. Tecnologia da Informação</a></li>
-<li id="menu-item-5423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5423"><a href="home-mpe/m14-diagnostico-da-organizacao-veja-so-1-mpe/index.html">14. Diagnóstico e Plano de Ação</a></li>
-</ul></div>							</nav>
+		<div id="wrapperLeftMenuMain">
+			<div id="wrapperLeftMenuTopN"></div>
+			<div id="wrapperLeftMenuTopNE"></div>
+			<div id="wrapperLeftMenuContents">
+				<nav id="wrapperLeftMenuNav">
+					<div class="menu-em-container"><ul id="menu-em" class="menu"><li id="menu-item-4299" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4280 current_page_item menu-item-4299"><a href="index.html">Home</a></li>
+						<li id="menu-item-4377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4377"><a href="home-mpe/apresentacao-do-curso/index.html">Apresentação do curso</a></li>
+						<li id="menu-item-4376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4376"><a href="home-mpe/primeiro-contato-mpe/index.html">Primeiro contato</a></li>
+						<li id="menu-item-4374" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4374"><a href="home-mpe/na-pratica-1-mpe/index.html">Na Prática</a></li>
+						<li id="menu-item-4379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4379"><a href="home-mpe/vamos-entender-melhor-1-mpe/index.html">Vamos entender melhor</a></li>
+						<li id="menu-item-4425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4425"><a href="home-mpe/m1-socializacao-e-ambientacao-veja-so-1-mpe/index.html">1. Socialização</a></li>
+						<li id="menu-item-5670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5670"><a href="home-mpe/m2-somando-esforcos-vamos-entender-melhor-1-mpe/index.html">2. Redes e Colaboração</a></li>
+						<li id="menu-item-4510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4510"><a href="home-mpe/m3-contexto-brasileiro-mpe-mpe/index.html">3. Contexto Brasileiro MPE</a></li>
+						<li id="menu-item-4574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4574"><a href="home-mpe/m4-empreendedorismo-veja-so1-mpe/index.html">4. Empreendedorismo</a></li>
+						<li id="menu-item-4621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4621"><a href="home-mpe/m5-planejamento-estrategico-mpe/index.html">5. Planejamento Estratégico</a></li>
+						<li id="menu-item-4984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4984"><a href="home-mpe/m6-etica-e-sustentabilidade-veja-so-1/index.html">6. Ética e Sustentabilidade</a></li>
+						<li id="menu-item-5057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5057"><a href="home-mpe/m7-gestao-da-cadeia-de-valor-mpe/index.html">7. Gestão da Cadeia de Valor</a></li>
+						<li id="menu-item-5198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5198"><a href="home-mpe/m8-gestao-da-qualidade-veja-so-1-mpe/index.html">8. Gestão da Qualidade</a></li>
+						<li id="menu-item-5187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5187"><a href="home-mpe/m9-contabilidade-e-financas-veja-so-1-mpe/index.html">9. Contabilidade e Finanças</a></li>
+						<li id="menu-item-5260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5260"><a href="home-mpe/m10-gestao-de-recursos-humanos-veja-so-1-mpe/index.html">10. Recursos Humanos</a></li>
+						<li id="menu-item-5305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5305"><a href="home-mpe/m11-comunicacao-e-marketing-na-pratica1-mpe/index.html">11. Marketing e Vendas</a></li>
+						<li id="menu-item-5347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5347"><a href="home-mpe/m12-legislacao-veja-so-1-mpe/index.html">12. Legislação</a></li>
+						<li id="menu-item-5390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5390"><a href="home-mpe/m13-tecnologia-a-servico-do-negocio-veja-so-1-mpe/index.html">13. Tecnologia da Informação</a></li>
+						<li id="menu-item-5423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5423"><a href="home-mpe/m14-diagnostico-da-organizacao-veja-so-1-mpe/index.html">14. Diagnóstico e Plano de Ação</a></li>
+					</ul>
+				</div>	
+			</nav>
 		</div>
 		<div id="wrapperLeftMenuRight1"><div id="wrapperLeftMenuRight2"></div></div>
 		<div id="wrapperLeftMenuRight3"><a href="javascript:self.leftMenu.toggle();"><img src="wp-content/themes/ONGsOnline/elements/menu-left-button.png" width="41" height="97" alt="exibir/ocultar menú" id="imgLeftMenuButton" /></a></div>
@@ -290,33 +194,33 @@ begin \sidebar.php
 	
 	
 	<script type="text/javascript">
-function findPos(obj) {
-	var curleft = curtop = 0;
-	if (obj.offsetParent) {
-		do {
+	function findPos(obj) {
+		var curleft = curtop = 0;
+		if (obj.offsetParent) {
+			do {
 				curleft += obj.offsetLeft;
 				curtop += obj.offsetTop;
 			} while (obj = obj.offsetParent);
-	}
-	return [curleft,curtop];
-}
-
-
-self.leftMenu = {
-	visible : 1,
-	toggle : function(){
-		if(leftMenu.visible==1){
-			document.getElementById("wrapperLeftMenuMain").style.left = "-" + (parseInt(findPos(document.getElementById("imgLeftMenuButton")))) + "px" ;
-			self.leftMenu.visible = 0;
-		}else{
-			document.getElementById("wrapperLeftMenuMain").style.left="0";
-			
-			self.leftMenu.visible = 1;
 		}
-	} ,
-	selectedLink : function(){
-		var leftLinks = _id("wrapperLeftMenuNav").getElementsByTagName("A");
-		var homeLink = _id("imgLogo").parentElement.href;
+		return [curleft,curtop];
+	}
+
+
+	self.leftMenu = {
+		visible : 1,
+		toggle : function(){
+			if(leftMenu.visible==1){
+				document.getElementById("wrapperLeftMenuMain").style.left = "-" + (parseInt(findPos(document.getElementById("imgLeftMenuButton")))) + "px" ;
+				self.leftMenu.visible = 0;
+			}else{
+				document.getElementById("wrapperLeftMenuMain").style.left="0";
+
+				self.leftMenu.visible = 1;
+			}
+		} ,
+		selectedLink : function(){
+			var leftLinks = _id("wrapperLeftMenuNav").getElementsByTagName("A");
+			var homeLink = _id("imgLogo").parentElement.href;
 		/*
 		console.log( "leftLinks: ", leftLinks );
 		console.log( "location:", location );
@@ -338,15 +242,15 @@ self.leftMenu = {
 			//console.log(currentLink != homeLink);
 			if(
 				location.href.search( currentLink ) === 0
-			&&
+				&&
 				currentLink != homeLink
-			){
+				){
 				leftLinks[i].className = "selected";
-			}else{
-				leftLinks[i].className = "";
-			}
+		}else{
+			leftLinks[i].className = "";
 		}
 	}
+}
 };
 
 // select current menu item
@@ -356,110 +260,70 @@ self.leftMenu.selectedLink();
 var w = parseInt((( window.innerWidth || document.documentElement.offsetWidth || document.body.offsetWidth ) - 918)/2);
 var m = parseInt(findPos(document.getElementById("imgLeftMenuButton"))) + 41;
 if( !isNaN(w) && w < m ) self.leftMenu.toggle();
-	
-	
-	</script>
-	<!--
-	________________________________________________________________________________
-	end left menu wrappers
-	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-	-->
 
 
+</script>
 
-	<!--
-	________________________________________________________________________________
-	begin top menu wrappers
-	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-	-->
-	<div id="wrapperTopMenuMain">
-		<div id="wrapperTopMenuLeft"></div>
-		<div id="wrapperTopMenuRight"></div>
-		<div id="wrapperTopMenuSub">
-			<div id="wrapperTopMenuContents">
-				<!-- top menu begin -->
-				 
-				<a href="index.html"><img src="wp-content/themes/ONGsOnline/elements/menu-top-home.png" width="20" height="17" border="0" alt="ir para a página inicial" /></a>
-				&nbsp;
-				<a href="javascript:window.print();"><img src="wp-content/themes/ONGsOnline/elements/menu-top-print.png" width="19" height="17" border="0" alt="imprimir" /></a>
-				&nbsp;
-				
-				<div id="topMenuPages">
-<div class="menu-to-apre-mpe-container"><ul id="menu-to-apre-mpe" class="menu"><li id="menu-item-4367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="home-mpe/apresentacao-do-curso/index.html">1</a></li>
-<li id="menu-item-4368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4368"><a href="home-mpe/apresentacao-do-curso/apresentacao-do-curso-2-mpe/index.html">2</a></li>
-<li id="menu-item-4366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4366"><a href="home-mpe/primeiro-contato-mpe/index.html">3</a></li>
-<li id="menu-item-4364" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4364"><a href="home-mpe/na-pratica-1-mpe/index.html">4</a></li>
-<li id="menu-item-4365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4365"><a href="home-mpe/na-pratica-1-mpe/na-pratica-1b-mpe/index.html">5</a></li>
-<li id="menu-item-4359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4359"><a href="home-mpe/vamos-entender-melhor-1-mpe/index.html">6</a></li>
-<li id="menu-item-4363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4363"><a href="home-mpe/vamos-entender-melhor-1-mpe/vamos-entender-melhor-1b-mpe/index.html">7</a></li>
-<li id="menu-item-4362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4362"><a href="home-mpe/vamos-entender-melhor-1-mpe/vamos-entender-melhor-1c-mpe/index.html">8</a></li>
-<li id="menu-item-4361" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4361"><a href="home-mpe/vamos-entender-melhor-1-mpe/vamos-entender-melhor-1d-mpe/index.html">9</a></li>
-<li id="menu-item-4360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4360"><a href="home-mpe/vamos-entender-melhor-1-mpe/vamos-entender-melhor-1e-mpe/index.html">10</a></li>
-</ul></div>				<script type="text/javascript">
-// Select links (add the corresponding CSS class)
-var selectedLinks = [];
-var pageLinks = _id("topMenuPages").getElementsByTagName("A");
-for(var i=0; i<pageLinks.length; i++){
-    for(var j=0; j<selectedLinks.length; j++){
-        if(
-            pageLinks[i].innerHTML.replace(/^\s+/gim , "").replace(/\s+$/gim , "")
-        ==
-            selectedLinks[j].replace(/^\s+/gim , "").replace(/\s+$/gim , "")
-        ){
-            pageLinks[i].className = "selected"
-        }
-    }
-}
-				</script>
+<div id="wrapperTopMenuMain">
+	<div id="wrapperTopMenuLeft"></div>
+	<div id="wrapperTopMenuRight"></div>
+	<div id="wrapperTopMenuSub">
+		<div id="wrapperTopMenuContents">
+			<!-- top menu begin -->
+
+			<a href="index.html"><img src="wp-content/themes/ONGsOnline/elements/menu-top-home.png" class="image-home" border="0" alt="Página Inicial" title="Página Inicial"  /></a>
+			&nbsp;
+
+			<div id="topMenuPages">
+				<div class="menu-to-apre-mpe-container"><ul id="menu-to-apre-mpe" class="menu"><li id="menu-item-4367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="home-mpe/apresentacao-do-curso/index.html">1</a></li>
+					<li id="menu-item-4368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4368"><a href="home-mpe/apresentacao-do-curso/apresentacao-do-curso-2-mpe/index.html">2</a></li>
+					<li id="menu-item-4366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4366"><a href="home-mpe/primeiro-contato-mpe/index.html">3</a></li>
+					<li id="menu-item-4364" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4364"><a href="home-mpe/na-pratica-1-mpe/index.html">4</a></li>
+					<li id="menu-item-4365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4365"><a href="home-mpe/na-pratica-1-mpe/na-pratica-1b-mpe/index.html">5</a></li>
+					<li id="menu-item-4359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4359"><a href="home-mpe/vamos-entender-melhor-1-mpe/index.html">6</a></li>
+					<li id="menu-item-4363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4363"><a href="home-mpe/vamos-entender-melhor-1-mpe/vamos-entender-melhor-1b-mpe/index.html">7</a></li>
+					<li id="menu-item-4362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4362"><a href="home-mpe/vamos-entender-melhor-1-mpe/vamos-entender-melhor-1c-mpe/index.html">8</a></li>
+					<li id="menu-item-4361" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4361"><a href="home-mpe/vamos-entender-melhor-1-mpe/vamos-entender-melhor-1d-mpe/index.html">9</a></li>
+					<li id="menu-item-4360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4360"><a href="home-mpe/vamos-entender-melhor-1-mpe/vamos-entender-melhor-1e-mpe/index.html">10</a></li>
+				</ul></div>				
+
+				<script type="text/javascript">
+						// Select links (add the corresponding CSS class)
+						var selectedLinks = [];
+						var pageLinks = _id("topMenuPages").getElementsByTagName("A");
+						for(var i=0; i<pageLinks.length; i++){
+							for(var j=0; j<selectedLinks.length; j++){
+								if(
+									pageLinks[i].innerHTML.replace(/^\s+/gim , "").replace(/\s+$/gim , "")
+									==
+									selectedLinks[j].replace(/^\s+/gim , "").replace(/\s+$/gim , "")
+									){
+									pageLinks[i].className = "selected"
+							}
+						}
+					}
+					</script>
 
 				</div>
 				&nbsp;
-				<a href="home-mpe/apresentacao-do-curso/index.html"><img src="wp-content/themes/ONGsOnline/elements/menu-top-arrow-right.png" width="19" height="15" border="0" alt="próximo" /></a>
-				
+				<a href="home-mpe/apresentacao-do-curso/index.html"><img src="wp-content/themes/ONGsOnline/elements/menu-top-arrow-right.png" class="image-pag" border="0" alt="próximo" title="Avançar Página" /></a>
+
 
 				<!-- top menu end -->
 			</div>
 		</div>
 	</div><!-- wrapperTopMenuMain -->
-	<!--
-	________________________________________________________________________________
-	end top menu wrappers
-	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-	-->
 
 
+	<footer>
+		<small>
+			<!-- some copyright notice and stuff goes here -->
+		</small>
+	</footer>
 
-<!--
-================================================================================
-end \sidebar.php 
-================================================================================
--->
-
-			<footer>
-				<small>
-					<!-- some copyright notice and stuff goes here -->
-				</small>
-			</footer>
-			
+</div><!-- wrapperMaster -->
 
 
-
-		</div><!-- wrapperMaster -->
-		<!--
-		________________________________________________________________________________
-		end main wrappers
-		¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-		-->
-
-
-
-
-	</body>
+</body>
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 </html>
-<!--
-================================================================================
-end \footer.php 
-================================================================================
--->
- 

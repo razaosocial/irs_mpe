@@ -1450,7 +1450,6 @@ img.aligncenter {
 .image-home{
 	width: 70px;
 	height :28px;
-	display: none;
 }
 
 /* </style> rem: editor sintax coloring kludge */
@@ -1504,6 +1503,24 @@ img.aligncenter {
 	text-decoration: underline;
 	line-height: 19px;
 	text-align: justify;
+	word-spacing: 1px;	
+}
+
+.inst_nav{
+	width: 260px;
+	border: 2px solid #fff;
+	padding: 9px;
+	border-radius: 20px;
+	background: #bdcbf4;
+	margin: 50px 0 0 200px;
+	text-align: center;
+}
+.inst_nav a {
+	color: #fff;
+	font-size: 20px;
+	text-decoration: underline;
+	line-height: 19px;
+	text-align: center;
 	word-spacing: 1px;	
 }
 
