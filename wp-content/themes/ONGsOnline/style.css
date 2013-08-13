@@ -186,7 +186,6 @@ body {
 	background-position: 0 0; 
 	background-attachment:scroll;
 	background-repeat:no-repeat;
-	/* background-color:#999933; */
 }
 
 #wrapperLeftMenuRight1{
@@ -196,8 +195,7 @@ body {
 	width:41px;
 	height:100%;
 	overflow:hidden; /* oh my gosh, that was tricky, along with wrapperLeftMenuRight2 */
-	
-	/* background-color:cyan; */
+
 }
 
 #wrapperLeftMenuRight2{
@@ -211,7 +209,7 @@ body {
 	background-position: 0 0; 
 	background-attachment:scroll;
 	background-repeat:repeat-y;
-	/* background-color:red; */
+
 }
 
 #wrapperLeftMenuRight3{
@@ -233,7 +231,6 @@ body {
 	background-position: bottom left; 
 	background-attachment:scroll;
 	background-repeat:repeat-x;
-	/* background-color:pink; */
 }
 
 #wrapperLeftMenuBottomSE{
@@ -247,7 +244,7 @@ body {
 	background-position: bottom left; 
 	background-attachment:scroll;
 	background-repeat:no-repeat;
-	/* background-color:#999933; */
+
 }
 
 #wrapperLeftMenuContents{
@@ -268,54 +265,32 @@ body {
 	overflow:hidden;
 }
 
-#wrapperTopMenuLeft{
-	position: absolute;
-	top:0;
-	left:0;
-	width:27px;
-	height:46px;
-	
-	background-image:url(wrappers/menu-top-left.png);
-	background-position: top left; 
-	background-attachment:scroll;
-	background-repeat:no-repeat;
-	/* background-color:orange; */
-}
-
-#wrapperTopMenuRight{
-	position: absolute;
-	top:0;
-	right:0;
-	width:30px;
-	height:46px;
-	
-	background-image:url(wrappers/menu-top-right.png);
-	background-position: bottom right; 
-	background-attachment:scroll;
-	background-repeat:no-repeat;
-	/* background-color:red; */
-}
-
 #wrapperTopMenuSub{
 	width:auto;
 	height:46px;
 	margin:0 30px 0 27px;
 	overflow:hidden;
+	border-radius: 13px 13px 0 0;
 	
-	background-image:url(wrappers/menu-top-tile.png); /* */
-	background-position: top left; 
-	background-attachment:scroll;
-	background-repeat:no-repeat-x;
-	/* background-color:orange; */
+	/*gradiente*/
+	background: #e8ffff; /* Old browsers */
+	background: #f6fcff; /* Old browsers */
+	background: -moz-linear-gradient(top, #f6fcff 3%, #e8ffff 3%, #fdffff 22%, #e6f8fd 62%, #d9f1f9 84%, #d9f1ff 98%, #e7f6ff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#f6fcff), color-stop(3%,#e8ffff), color-stop(22%,#fdffff), color-stop(62%,#e6f8fd), color-stop(84%,#d9f1f9), color-stop(98%,#d9f1ff), color-stop(100%,#e7f6ff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f6fcff 3%,#e8ffff 3%,#fdffff 22%,#e6f8fd 62%,#d9f1f9 84%,#d9f1ff 98%,#e7f6ff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f6fcff 3%,#e8ffff 3%,#fdffff 22%,#e6f8fd 62%,#d9f1f9 84%,#d9f1ff 98%,#e7f6ff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f6fcff 3%,#e8ffff 3%,#fdffff 22%,#e6f8fd 62%,#d9f1f9 84%,#d9f1ff 98%,#e7f6ff 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f6fcff 3%,#e8ffff 3%,#fdffff 22%,#e6f8fd 62%,#d9f1f9 84%,#d9f1ff 98%,#e7f6ff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6fcff', endColorstr='#e7f6ff',GradientType=0 ); /* IE6-9 */
+
+	
 }
 
 #wrapperTopMenuContents{
-	height:46px;
-	margin:11px 0 0 0;
+	height:50px;
+	margin:0px 50px 50px 50px;
 	overflow:hidden;
-	padding:10px 13px 0 13px;
-	
-	/* background-color:yellow; */
+	padding:6px 15px 0px 0px;
 }
 
 #topMenuPages{
@@ -349,13 +324,14 @@ body {
 #topMenuPages a:active, 
 #topMenuPages a:hover {
 	display:inline-block;
-	margin:0 3px 0 0;
-	padding:5px 0px 5px 0px;
-	width:20px;
+	margin:4px 5px 0 0;
+	padding:7px 0px 7px 0px;
+	width:27px;
 	overflow:hidden;
+	border-radius: 5px;
 	
-	font-family:Arial, Helvetica;
-	font-size: 9px;
+	font-family: Century Gothic,Calibri,Helvetica,Verdana, Geneva,Adobe Fan Heiti Std B;
+	font-size: 13px;
 	line-height: 9px;
 	font-weight:bold;
 	text-align:center;
@@ -363,7 +339,6 @@ body {
 	text-decoration: none;
 	vertical-align:top;
 	
-	/* background-color:#5e7cd3; */
 	background-color:#bdcbf4;
 }
 
@@ -405,7 +380,6 @@ body {
 	background-position: 0 0; 
 	background-attachment:scroll;
 	background-repeat:no-repeat;
-	/* background-color:green; */ 
 }
 
 #wrapperContentsMaster{
