@@ -152,7 +152,7 @@ body {
 }*/
 
 /*--------- INICIO DO MENU LATERAL -----------*/
-/*#wrapperLeftMenuMain{
+#wrapperLeftMenuMain{
 	position: fixed;
 	z-index:510;
 	top:137px;
@@ -259,7 +259,7 @@ body {
 	background-color:white;
 	max-height:400px;
 	overflow:auto;
-}*/
+}
 
 /*--------- FIM DO MENU LATERAL -----------*/
 
