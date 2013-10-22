@@ -9,6 +9,15 @@ begin \header.php
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>M8-Gestão da Qualidade-Veja só 2-mpe &laquo; ONGs Online</title>
+
+	<!-- js pop-ups -->
+	<script src="../../../wp-includes/js/modernizr.js"></script> 
+	<script src="../../../wp-includes/js/jquery-min.js"></script>
+	<script src="../../../wp-includes/js/jquery-ui-1.8.18.custom.min.js"></script>
+
+	<!-- js tooltip -->
+	<script src="../../../wp-includes/js/easyTooltip.js"></script>
+
 		<link rel="stylesheet" href="../../../wp-content/themes/ONGsOnline/style.css" type="text/css" media="screen" />
  
 		<!-- link rel="pingback" href="http://ongs.aeon/xmlrpc.php" / -->
@@ -70,7 +79,9 @@ var lightbox = {
 };
 
 		</script>
-	</head>
+	<script type="text/javascript"> $(document).ready(function() { $(".image-home, .image-pag").easyTooltip();});</script>
+
+</head>
 	<body class="page page-id-5098 page-child parent-pageid-5095 page-template-default">
 
 
